@@ -6,7 +6,6 @@ import java.sql.Connection;
 import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.Arrays;
 
 /**
  * Created by wojda on 02.03.2016.
@@ -23,7 +22,8 @@ public class Database {
             connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
             System.out.println("Connect to database successfully.");
         } catch (SQLException e) {
-            System.out.println("Error." + Arrays.toString(e.getStackTrace()));
+            System.out.println("Error.");
+            e.printStackTrace();
         }
     }
 
