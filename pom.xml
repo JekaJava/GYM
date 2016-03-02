@@ -7,6 +7,13 @@
     <groupId>ua.wojda</groupId>
     <artifactId>ua.wojda</artifactId>
     <version>1.0</version>
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.34</version>
+        </dependency>
+    </dependencies>
 
 
 </project>
